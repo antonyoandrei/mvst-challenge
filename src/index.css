@@ -43,10 +43,10 @@ h5,
   width: 0.8rem;
 }
 ::-webkit-scrollbar-track {
-  background: var(--grey);
+  background: var(--light-black);
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--light-black);
+  background: var(--grey);
 }
 
 /* GLOBALS */
