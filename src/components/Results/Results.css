@@ -1,0 +1,12 @@
+.results-container {
+  display: flex;
+  justify-content: center;
+  gap: 160px;
+}
+
+.fallback-text {
+  font-size: 80px;
+  font-weight: var(--fw-bold);
+  color: var(--light-grey);
+
+}
