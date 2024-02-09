@@ -65,10 +65,12 @@ function App(): JSX.Element {
         }
       `;
 
+      const GITHUB_TOKEN = import.meta.env.VITE_GITHUB_TOKEN;
+
       const response = await fetch("https://api.github.com/graphql", {
         method: "POST",
         headers: {
-          Authorization: `Bearer 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`,
+          Authorization: `Bearer ${GITHUB_TOKEN}`,
           "Content-Type": "application/json",
         },
         body: JSON.stringify({ query }),
