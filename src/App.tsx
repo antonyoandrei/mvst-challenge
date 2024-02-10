@@ -17,12 +17,16 @@ function App(): JSX.Element {
       <Header />
       <Toaster
         position="top-center"
+        closeButton
         toastOptions={{
           style: {
             background: "var(--black)",
             border: "var(--black)",
             color: "var(--light-grey)",
           },
+          classNames: {
+            closeButton: 'closeButton'
+          }
         }}
       />
       <Searchbar onSearch={fetchUserData} />

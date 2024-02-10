@@ -60,3 +60,12 @@ body {
 body {
   background-color: var(--black);
 }
+
+.closeButton {
+  color: var(--light-grey) !important;
+  background: var(--black) !important;
+  border: var(--black) !important;
+  right: 0 !important;
+  left: auto !important;
+  top: 10px !important;
+}
