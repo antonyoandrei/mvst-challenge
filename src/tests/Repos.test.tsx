@@ -21,7 +21,7 @@ describe("Repos component", () => {
       },
     ];
 
-    const { getByText } = render(<Repos userRepos={userRepos} />);
+    const { getByText, getAllByText } = render(<Repos userRepos={userRepos} />);
 
     expect(getByText("Repositories")).toBeInTheDocument();
     expect(getByText("2")).toBeInTheDocument();
@@ -32,7 +32,10 @@ describe("Repos component", () => {
         expect(getByText(repo.description)).toBeInTheDocument();
       }
       if (repo.primaryLanguage) {
-        expect(getByText(repo.primaryLanguage.name)).toBeInTheDocument();
+        const languageElements = getAllByText(repo.primaryLanguage.name);
+        languageElements.forEach((element) => {
+          expect(element).toBeInTheDocument();
+        });
       }
     });
   });

@@ -44,6 +44,10 @@
   transition: border 0.1s, background-color 0.1s;
 }
 
+.btn:focus {
+  outline: none;
+}
+
 .btn:hover {
   border: 1px var(--light-grey) solid;
   background-color: #444c56;
@@ -167,6 +171,11 @@
   font-weight: var(--fw-regular);
   color: var(--light-grey);
   border-top: 1px #404549 solid;
+  cursor: pointer;
+}
+
+.select-option:hover {
+  background-color: #444c56;
 }
 
 .check-icon {
