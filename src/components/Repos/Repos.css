@@ -8,12 +8,54 @@
   gap: 20px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.repos-title-flex {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.repos-sort-flex {
+  gap: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .repos-title {
   font-size: var(--fs-m);
   font-weight: var(--fw-bold);
   color: var(--light-grey);
+}
+
+.btn {
+  font-weight: var(--fw-m);
+  font-size: var(--fs-s);
+  color: var(--light-grey);
+  background-color: var(--light-black);
+  border-radius: 6px;
+  appearance: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 2px 15px;
+  border: 1px #404549 solid;
+  transition: border 0.1s, background-color 0.1s;
+}
+
+.btn:hover {
+  border: 1px var(--light-grey) solid;
+  background-color: #444c56;
+}
+
+.btn.active {
+  border: 1px var(--light-grey) solid;
+  background-color: #444c56;
+}
+
+.triangle-span {
+  margin-top: 4.5px;
 }
 
 .repo-icon {
@@ -75,4 +117,72 @@
   margin-top: 10px;
   margin-bottom: 30px;
   background-color: var(--light-grey);
+}
+
+.trigger-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal {
+  border: 1px #404549 solid;
+  background-color: var(--light-black);
+  width: 300px;
+  height: auto;
+  border-radius: 6px;
+  position: absolute;
+  margin-left: -250px;
+  margin-top: 50px;
+}
+
+.modal-title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 16px 7px 16px;
+}
+
+.modal-title {
+  font-size: var(--fs-s);
+  font-weight: var(--fw-bold);
+  color: var(--light-grey);
+}
+
+.modal-close {
+  font-size: var(--fs-s);
+  font-weight: var(--fw-regular);
+  color: var(--grey);
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  color: var(--light-grey);
+}
+
+.select-option {
+  display: flex;
+  align-items: center;
+  padding: 7px 16px;
+  font-size: var(--fs-s);
+  font-weight: var(--fw-regular);
+  color: var(--light-grey);
+  border-top: 1px #404549 solid;
+}
+
+.check-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.hidden-modal {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 1s, transform 1s;
+  pointer-events: none;
+}
+
+.visible-modal {
+  opacity: 1;
+  transition: opacity 1s, transform 1s;
 }

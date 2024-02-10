@@ -9,7 +9,7 @@
   font-size: var(--fs-m);
   border: none;
   outline: none;
-  border-radius: 20px 0px 0px 20px;
+  border-radius: 6px 0px 0px 6px;
   padding: 15px 40px;
   font-weight: var(--fw-medium);
   color: var(--light-grey);
@@ -32,7 +32,7 @@
   background-color: var(--black);
   border: none;
   outline: none;
-  border-radius: 0px 20px 20px 0px;
+  border-radius: 0px 6px 6px 0px;
   padding: 10px 15px;
   transition: background-color 0.2s;
   border: 1px solid var(--light-black);

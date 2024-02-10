@@ -1,5 +1,7 @@
 import "./Repos.css";
 import reposvg from "../../assets/repo.svg";
+import triangle from "../../assets/triangle-down.svg";
+import check from "../../assets/check.svg";
 
 /**
  * Repos component.
@@ -32,9 +34,60 @@ const Repos = ({ userRepos }: { userRepos: any[] }): JSX.Element => {
   return (
     <article className="repos-container">
       <div className="repos-flex">
-        <img src={reposvg} alt="repo-svg" />
-        <p className="repos-title">Repositories</p>
-        <p className="repos-title">{userRepos.length}</p>
+        <div className="repos-title-flex">
+          <img src={reposvg} alt="repo-svg" />
+          <p className="repos-title">Repositories</p>
+          <p className="repos-title">{userRepos.length}</p>
+        </div>
+        <div className="repos-sort-flex">
+          <summary className="trigger-container">
+            <button className="btn">
+              <span>Language</span>
+              <span className="triangle-span">
+                <img src={triangle} alt="triangle-svg" />
+              </span>
+            </button>
+            <div className="modal hidden-modal">
+              <div className="modal-title-wrapper">
+                <p className="modal-title">Select language</p>
+                <button className="modal-close">x</button>
+              </div>
+              <div className="select-list">
+                <label className="select-option">
+                  <input type="radio" hidden checked />
+                  <img src={check} alt="check-svg" className="check-icon" />
+                  <p>All</p>
+                </label>
+              </div>
+            </div>
+          </summary>
+          <summary className="trigger-container">
+            <button className="btn">
+              <span>Sort</span>
+              <span className="triangle-span">
+                <img src={triangle} alt="triangle-svg" />
+              </span>
+            </button>
+            <div className="modal hidden-modal">
+              <div className="modal-title-wrapper">
+                <p className="modal-title">Select order</p>
+                <button className="modal-close">x</button>
+              </div>
+              <div className="select-list">
+                <label className="select-option">
+                  <input type="radio" hidden checked />
+                  <img src={check} alt="check-svg" className="check-icon" />
+                  <p>Last updated</p>
+                </label>
+                <label className="select-option">
+                  <input type="radio" hidden checked />
+                  <img src={check} alt="check-svg" className="check-icon" />
+                  <p>Name</p>
+                </label>
+              </div>
+            </div>
+          </summary>
+        </div>
       </div>
       <div className="repos-wrapper">
         {userRepos.map((repo, index) => (
