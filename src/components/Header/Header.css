@@ -25,3 +25,16 @@
   font-weight: var(--fw-bold);
   color: var(--light-grey);
 }
+
+@media screen and (max-width: 550px) {
+  .header-text {
+    font-size: 18px;
+  }
+  .header-flex {
+    padding: 10px 40px;
+  }
+  .github-icon {
+    width: 55px;
+    height: 55px;
+  }
+}

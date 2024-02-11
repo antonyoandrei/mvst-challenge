@@ -57,3 +57,23 @@
   font-weight: var(--fw-medium);
   color: var(--grey);
 }
+
+@media screen and (max-width: 550px) {
+  .profile-picture {
+    width: 300px;
+    height: 300px;
+  }
+  .people-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .profile-name {
+    font-size: var(--fs-r);
+  }
+  .profile-username,
+  .followers-container,
+  .following-container,
+  .dot {
+    font-size: var(--fs-s);
+  }
+}

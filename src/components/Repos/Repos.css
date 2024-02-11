@@ -195,3 +195,20 @@
   opacity: 1;
   transition: opacity 1s, transform 1s;
 }
+
+@media screen and (max-width: 550px) {
+  .repos-flex {
+    flex-direction: column;
+  }
+  .modal {
+    margin-left: -40px;
+    width: 175px;
+  }
+  .repos-wrapper {
+    overflow-y: visible;
+    width: 350px;
+  }
+  .repo-item {
+    margin-right: 0;
+  }
+}
