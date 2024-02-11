@@ -57,7 +57,7 @@ input[type="search"]::-webkit-search-results-decoration {
   .search-input {
     padding: 10px 15px;
     font-size: var(--fs-r);
-    width: 240px;
+    width: 270px;
   }
   .search-icon {
     width: 30px;
