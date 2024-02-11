@@ -58,7 +58,7 @@
   color: var(--grey);
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
   .profile-picture {
     width: 300px;
     height: 300px;

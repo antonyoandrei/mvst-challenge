@@ -50,7 +50,7 @@ input[type="search"]::-webkit-search-results-decoration {
   display: none;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
   .search-button {
     padding: 10px 10px;
   }
