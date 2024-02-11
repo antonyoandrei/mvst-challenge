@@ -55,7 +55,12 @@ input[type="search"]::-webkit-search-results-decoration {
     padding: 10px 10px;
   }
   .search-input {
-    padding: 10px 10px;
+    padding: 10px 15px;
     font-size: var(--fs-r);
+    width: 240px;
+  }
+  .search-icon {
+    width: 30px;
+    height: 30px;
   }
 }
