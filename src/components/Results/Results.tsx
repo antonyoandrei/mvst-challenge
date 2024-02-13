@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import Profile from "../Profile/Profile";
 import Repos from "../Repos/Repos";
 import "./Results.css";
@@ -11,8 +12,18 @@ import "./Results.css";
  */
 
 const Results = ({ userData, userRepos }: { userData: any, userRepos: any[] }): JSX.Element => {
+  const [animation, setAnimation] = useState("");
+  
+  useEffect(() => {
+    setAnimation("fade 1s ease 0s 1 normal forwards");
+    const timeout = setTimeout(() => {
+      setAnimation("");
+    }, 1000);
+    return () => clearTimeout(timeout);
+  }, [userData]);
+
   return (
-    <section className="results-container">
+    <section className="results-container" style={{ animation }}>
       {userData && <Profile userData={userData} />}
       {userRepos && userRepos.length > 0 && <Repos userRepos={userRepos} />}
       {!userData && <h1 className="fallback-text">Start searching!</h1>}
