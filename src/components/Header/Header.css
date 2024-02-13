@@ -28,13 +28,13 @@
 
 @media screen and (max-width: 600px) {
   .header-text {
-    font-size: 16px;
+    font-size: 14px;
   }
   .header-flex {
-    padding: 10px 40px;
+    padding: 10px 30px;
   }
   .github-icon {
-    width: 55px;
-    height: 55px;
+    width: 45px;
+    height: 45px;
   }
 }
