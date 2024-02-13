@@ -52,7 +52,7 @@ The project is a React application built with Vite for enhanced performance and 
 - Use the filters to narrow down repositories by programming language.
 - Click on the sorting options to sort repositories by last updated or name.
 
-### Testing
+## Testing
 
 To ensure the reliability of the application, comprehensive testing has been implemented using Jest and React Testing Library. To run the tests, first, ensure that all dependencies are installed by running `npm install`. Once dependencies are installed, you can execute the tests by running:
 
@@ -68,7 +68,7 @@ npm run test <test-file-name>
 
 Test files are located in the `tests` folder within the `src` directory.
 
-### Future Improvements
+## Future Improvements
 
 As for future improvements, there are several avenues to explore for enhancing the application further. One potential improvement is to continue componentizing the code to make it more scalable and maintainable. By breaking down the UI into smaller, reusable components, the codebase can become more modular and easier to manage.
 
