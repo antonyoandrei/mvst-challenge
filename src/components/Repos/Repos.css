@@ -187,13 +187,13 @@
 .hidden-modal {
   opacity: 0;
   transform: translateY(-10px);
-  transition: opacity 1s, transform 1s;
+  transition: opacity 0.5s, transform 0.5s;
   pointer-events: none;
 }
 
 .visible-modal {
   opacity: 1;
-  transition: opacity 1s, transform 1s;
+  transition: opacity 0.5s, transform 0.5s;
 }
 
 @media screen and (max-width: 600px) {
