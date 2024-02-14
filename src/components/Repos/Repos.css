@@ -86,6 +86,7 @@
   font-size: var(--fs-m);
   font-weight: var(--fw-medium);
   color: var(--blue);
+  overflow-wrap: break-word;
 }
 
 .repo-name:hover {
